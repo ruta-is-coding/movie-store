@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "newman run movie-store.postman_collection.json -e movie-store.postman_environment.json",
     "start": "nodemon index.js"
   },
   "keywords": [],

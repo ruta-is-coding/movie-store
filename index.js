@@ -44,12 +44,9 @@ app.put('/movies/:id', (req, res) => {
 
 // Delete a movie by ID
 app.delete('/movies/:id', (req, res) => {
-    const movieIndex = movies.findIndex(m => m.id === parseInt(req.params.id));
-    if (movieIndex === -1) {
-        return res.status(404).send('Movie not found');
-    }
-    const deletedMovie = movies.splice(movieIndex, 1);
-    res.status(200).send(deletedMovie[0]);
+    const { id } = req.params;
+    movies = movies.filter(item => item.id != id);
+    res.status(204).send();
 });
 
 app.listen(PORT, () => {
