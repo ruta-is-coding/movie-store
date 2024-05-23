@@ -6,6 +6,7 @@ app.use(express.json());
 
 let movies = [];
 
+
 // Create a new movie
 app.post('/movies', (req, res) => {
     const { title, productionDate, producer, rating } = req.body;
