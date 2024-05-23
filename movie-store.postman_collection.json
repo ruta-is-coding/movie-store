@@ -503,6 +503,37 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "delete movie by id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{base_url}}/movies/{{id}}",
+							"protocol": "http",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"movies",
+								"{{id}}"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}

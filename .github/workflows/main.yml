@@ -50,10 +50,6 @@ jobs:
       run: |
        npm run test
 
-    - name: Run POSTMAN collection to console
-      run: |
-       npm run test
-
     # Run the POSTMAN collection to html report
     - name: Run POSTMAN collection to html report
       run: |
