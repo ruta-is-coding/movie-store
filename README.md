@@ -24,9 +24,6 @@ Follow these steps to get started with the project:
 3. Install dependencies
    ```
    npm install
-4. Start the server
+4. Start the server and run tests with one script
    ```
-   npm run start
-5. Open a new terminal and run the tests
-   ```
-   npm run test
+   npm run start-test
