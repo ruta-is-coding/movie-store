@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "newman run movie-store.postman_collection.json -e movie-store.postman_environment.json",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "start-test": "concurrently \"nodemon index.js\" \"newman run movie-store.postman_collection.json -e movie-store.postman_environment.json\""
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
     "express": "^4.19.2"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "newman": "^6.1.2",
     "nodemon": "^3.1.0"
   }
