@@ -14,6 +14,7 @@ This project is a testing framework for a Node.js Express API application for a 
 - Nodemon
 - GitHub Actions
 - Newman Reporter Htmlextra
+- Concurrently
 
 ## Instructions
 Follow these steps to get started with the project:
